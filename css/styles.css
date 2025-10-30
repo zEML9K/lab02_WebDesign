@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f0f0f0, #d6e0f5);
+}
+
+header, footer {
+    background: linear-gradient(90deg, #000000, #13294b);
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+header {
+    padding: 15px;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    padding: 10px 0;
+    background: #13294b;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid #0a1a2f;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #0a1a2f;
+    transform: scale(1.07);
+    box-shadow: 0 0 15px rgba(0, 40, 80, 0.7);
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #13294b;
+    padding-bottom: 5px;
+    color: #13294b;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+section#photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #13294b;
+    color: white;
+}
+
+mark {
+  background: none;   
+  color: blue;     
+  font-weight: bold;  
+}
+
+footer a {
+    margin: 0 15px;
+}
+
+footer img, figure img {
+    transition: transform 0.3s ease;
+}
+
+footer img:hover, img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    padding: 30px;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0,0,0,0.6);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+form input, form textarea, form button {
+  padding: 8px;      
+  border: 1px solid lightgray;     
+  border-radius: 5px;          
+}
+
+form input:focus, form textarea:focus {
+  border-color: #13294b;        
+  outline: none;     
+  transition: box-shadow 0.3s;      
+  box-shadow: 0 0 8px rgba(19,41,75,0.5);           
+}
+
+form input:valid {
+  border-color: green;            
+}
+form input:invalid {
+  border-color: red;                
+}
+
+form button, .btn{
+  background: #13294b;         
+  color: white;                                           
+  padding: 10px;               
+  text-align: center;           
+  border-radius: 5px;          
+  text-decoration: none;      
+}
+
+form button:hover, .btn:hover {
+  background: #0a1a2f;         
+}
+
+form button:active {
+  background: #1b3b6f; 
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal:target{
+    display: block;
+}
+
+.modal-content {
+  background: white;            
+  margin: 10% auto;            
+  padding: 20px;              
+  border-radius: 8px;         
+  width: 300px;                 
+  position: relative;          
+}
+
+.close {
+  position: absolute;          
+  top: 10px; right: 15px;      
+  font-size: 20px;              
+  text-decoration: none;     
+  color: gray;                 
+}
+
+.float-img {
+    float: left; 
+    margin: 10px;
+    width: 30px;
+}
+
+.overlay-container{
+    position: relative;
+    height: 200px;
+    margin: 20px;
+}
+
+.overlay-container img{
+    position: absolute;
+    width: 200px;
+}
+
+.overlay-container img.top {
+    top: 30px;
+    left: 50px;
+}
+

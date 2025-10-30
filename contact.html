@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Контакти</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Контактна сторінка</h1>
+            <nav>
+                <ul><li><a href="index.html">Головна</a></li></ul>
+            </nav>
+        </header>
+
+        <Main>
+        <section>
+            <h2>Oбтікання текстом</h2>
+            <img src="images/youtube.png" alt="Фото" class="float-img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section>
+            <h2>Накладання картинок</h2>
+            <div class="overlay-container">
+                <img src="images/flag.png">
+                <img src="images/rdk.jpg" class="top">
+            </div>
+        </section>
+            <section>
+                <h2>Форма реєстрації</h2>
+                <form>
+                    <label for="name">Ім'я:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Ел. пошта:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" name="password" minlength="8" required>
+
+                    <label for="dob">Дата народження:</label>
+                    <input type="date" id="dob" name="dob">
+
+                    <button type="submit">Зареєструватися</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Форма входу</h2>
+                <a href="#loginModal" class="btn">Увійти</a>
+            </section>
+
+            <div id="loginModal" class="modal">
+                <div class="modal-content">
+                    <a href="#" class="close">&times;</a>
+
+                    <h2>Форма входу</h2>
+                    <form>
+                        <label for="login">Логін:</label>
+                        <input type="text" id="login" name="login" required>
+
+                        <label for="password">Пароль:</label>
+                        <input type="password" id="password" name="password" required>
+
+                        <button type="submit">Увійти</button>
+                    </form>
+                </div>
+            </div>
+
+            <section>
+                <h2>Зворотній зв'язок</h2>
+                <form>
+                    <label for="f-name">Ім’я:</label>
+                    <input type="text" id="f-name" name="f-name" required>
+
+                    <label for="f-email">Ел. пошта:</label>
+                    <input type="email" id="f-email" name="f-email" required>
+
+                    <label for="topic">Тема:</label>
+                    <input type="text" id="topic" name="topic">
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Відправити</button>
+                </form>
+            </section>
+        </Main>
+
+        <footer>
+            <p>&copy; 2025 Контактна сторінка</p>
+        </footer>
+    </body>
+</html>
