@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест — DOM Маніпуляції</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="main">
+
+<header>
+    <h1>ТЕСТ: DOM — МАНІПУЛЯЦІЇ ТА АТРИБУТИ</h1>
+    <nav>
+        <ul>
+            <li><a href="contact.html">Головна</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Введіть дані студента</h2>
+
+    <form id="student-form">
+        <label>ПІБ студента</label>
+        <input type="text" id="studentName" required>
+
+        <label>Група</label>
+        <input type="text" id="studentGroup" required>
+
+        <button type="submit" class="btn">Зберегти</button>
+    </form>
+
+    <h2>Оберіть рівень тесту</h2>
+
+    <div class="level-buttons">
+        <button class="btn choose-level" data-level="A">Початковий</button>
+        <button class="btn choose-level" data-level="B">Середній</button>
+        <button class="btn choose-level" data-level="C">Складний</button>
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2025. Лабораторна робота — JavaScript та DOM</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
